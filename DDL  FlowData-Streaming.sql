@@ -24,7 +24,7 @@ tipo varchar(50)
 );
 
 -- Criação da tabela de episódios para as séries
-create table episodios (
+create table episodios(
 id_episodio int auto_increment primary key,
 id_titulo int not null,
 tipo_automatic_ep enum('Extra/Preview', 'Episódio Padrão') default 'Episódio Padrão',
