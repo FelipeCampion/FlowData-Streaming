@@ -1,4 +1,4 @@
-use flowdata_streaming;
+use FlowData_Streaming;
 
 -- inserindo dados base
 insert into perfis (nome_perfil, idade, tipo_perfil) values ('felipe admin', 25, 'adulto');
