@@ -112,11 +112,11 @@ before insert on titulos
 for each row
 begin
     if new.duracao_minutos < 15 then
-        set new.tipo_automatico = 'Podcast/Extra';
+        set new.tipo_automatico ='Podcast/Extra';
     elseif new.duracao_minutos <= 70 then
-        set new.tipo_automatico = 'Curta-metragem';
+        set new.tipo_automatico ='Curta-metragem';
     else
-        set new.tipo_automatico = 'Longa-metragem';
+        set new.tipo_automatico ='Longa-metragem';
     end if;
 end//
 delimiter ;
